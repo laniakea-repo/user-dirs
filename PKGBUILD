@@ -2,10 +2,10 @@
 
 pkgname=user-dirs
 pkgver=0.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Keep user directories like ~/Downloads and ~/Music in English"
 url="https://www.laniakeaos.com"
-arch=(x86_64)
+arch=(any)
 license=(MIT)
 depends=(xdg-user-dirs)
 install=user-dirs.install
