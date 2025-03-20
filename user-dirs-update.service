@@ -1,0 +1,12 @@
+[Unit]
+Description=Update user dir configuration
+Before=xdg-user-dirs-update.service
+Wants=xdg-user-dirs-update.service
+
+[Service]
+Environment="LANG=C"
+Type=oneshot
+ExecStart=/usr/bin/xdg-user-dirs-update
+
+[Install]
+WantedBy=default.target
